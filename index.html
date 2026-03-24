@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lucas Cabrera — Desarrollo Web & IA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- =====================
+       CURSOR PERSONALIZADO
+       ===================== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- =====================
+       NAV
+       ===================== -->
+  <nav class="nav" id="mainNav">
+    <div class="nav-logo">Lc Dev</div>
+    <div class="nav-links">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto" class="nav-cta">Hablemos</a>
+    </div>
+    <div class="nav-toggle" id="navToggle" onclick="toggleNav()">
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- =====================
+       HERO
+       ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grain"></div>
+      <div class="hero-circle c1"></div>
+      <div class="hero-circle c2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag">Disponible para proyectos</div>
+      <h1 class="hero-title">
+        Desarrollo web<br>
+        <em>con inteligencia</em><br>
+        artificial.
+      </h1>
+      <p class="hero-desc">
+        Creo landing pages, tiendas online y automatizaciones
+        que ayudan a negocios a crecer — combinando código limpio
+        con las mejores herramientas de IA.
+      </p>
+      <div class="hero-actions">
+        <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+        <a href="#contacto" class="btn-ghost">Contactame →</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card hc1">
+        <span class="hc-label">Stack</span>
+        <div class="hc-tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          <span>React</span><span>Node.js</span><span>IA</span>
+        </div>
+      </div>
+      <div class="hero-card hc2">
+        <span class="hc-label">Proyectos completados</span>
+        <span class="hc-num">10+</span>
+      </div>
+      <div class="hero-card hc3">
+        <span class="hc-label">Tiempo de entrega</span>
+        <span class="hc-num">3–7 días</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       PROYECTOS
+       ===================== -->
+  <section class="proyectos" id="proyectos">
+    <div class="section-header">
+      <span class="section-tag">Trabajos</span>
+      <h2>Proyectos <em>destacados</em></h2>
+    </div>
+
+    <div class="proyectos-grid">
+
+      <article class="proyecto-card featured">
+        <div class="proyecto-img" style="background-image: url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800&q=80')">
+          <div class="proyecto-overlay">
+            <a href="https://urbana-landing-v2.vercel.app" target="_blank" class="proyecto-link">Ver proyecto →</a>
+          </div>
+          <span class="proyecto-badge">Destacado</span>
+        </div>
+        <div class="proyecto-info">
+          <div class="proyecto-meta">
+            <span>E-commerce</span>
+            <span>2025</span>
+          </div>
+          <h3>URBANA — Tienda de Ropa</h3>
+          <p>Landing page completa con carrito funcional, selector de talles, modal de productos, wishlist, filtros y countdown con ofertas automáticas.</p>
+          <div class="proyecto-stack">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="proyecto-card coming">
+        <div class="proyecto-coming-inner">
+          <span class="coming-icon">⚡</span>
+          <h3>Próximamente</h3>
+          <p>Más proyectos en camino</p>
+        </div>
+      </article>
+
+      <article class="proyecto-card coming">
+        <div class="proyecto-coming-inner">
+          <span class="coming-icon">🤖</span>
+          <h3>Próximamente</h3>
+          <p>Automatizaciones con IA</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- =====================
+       SERVICIOS
+       ===================== -->
+  <section class="servicios" id="servicios">
+    <div class="section-header">
+      <span class="section-tag">Qué hago</span>
+      <h2>Servicios <em>que ofrezco</em></h2>
+    </div>
+
+    <div class="servicios-grid">
+
+      <div class="servicio-card">
+        <div class="servicio-icon">🌐</div>
+        <h3>Landing Pages</h3>
+        <p>Páginas profesionales, rápidas y optimizadas para convertir visitantes en clientes. Diseño único para cada negocio.</p>
+        <ul>
+          <li>Diseño responsive</li>
+          <li>Formulario de contacto</li>
+          <li>Optimizado para SEO</li>
+          <li>Entrega en 3–5 días</li>
+        </ul>
+      </div>
+
+      <div class="servicio-card featured">
+        <div class="servicio-badge">Más pedido</div>
+        <div class="servicio-icon">🛒</div>
+        <h3>Tiendas Online</h3>
+        <p>E-commerce completo con carrito, selector de talles, filtros, modal de productos y pasarela de pagos.</p>
+        <ul>
+          <li>Carrito funcional</li>
+          <li>MercadoPago integrado</li>
+          <li>Panel de productos</li>
+          <li>Entrega en 5–7 días</li>
+        </ul>
+      </div>
+
+      <div class="servicio-card">
+        <div class="servicio-icon">⚡</div>
+        <h3>Automatizaciones IA</h3>
+        <p>Workflows automáticos que conectan tus herramientas y ahorran horas de trabajo manual cada semana.</p>
+        <ul>
+          <li>Formulario → Email/CRM</li>
+          <li>WhatsApp automático</li>
+          <li>Google Sheets sync</li>
+          <li>n8n / Make</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =====================
+       SOBRE MÍ
+       ===================== -->
+  <section class="sobre-mi" id="sobre-mi">
+    <div class="sobre-content">
+      <div class="sobre-text">
+        <span class="section-tag">Sobre mí</span>
+        <h2>Dev + IA =<br><em>resultados reales</em></h2>
+        <p>
+          Soy Lucas, desarrollador web de Santo Tomé, Santa Fe. Combino programación
+          frontend con herramientas de inteligencia artificial para crear productos
+          digitales que funcionan de verdad.
+        </p>
+        <p>
+          Mi enfoque es simple: entender el negocio del cliente, construir rápido
+          y entregar algo que realmente ayude a vender más o trabajar mejor.
+        </p>
+        <div class="sobre-skills">
+          <div class="skill-item">
+            <span class="skill-name">HTML / CSS</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">JavaScript</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">React</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:40%"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">IA & Automatizaciones</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="sobre-visual">
+        <div class="sobre-card">
+          <div class="sobre-avatar">LC</div>
+          <div class="sobre-info">
+            <strong>Lucas Cabrera</strong>
+            <span>Frontend Developer</span>
+            <span>Santo Tomé, Argentina</span>
+          </div>
+          <div class="sobre-stats">
+            <div class="stat">
+              <span class="stat-num">10+</span>
+              <span class="stat-label">Proyectos</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">3–7d</span>
+              <span class="stat-label">Entrega</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">Dedicación</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       CONTACTO
+       ===================== -->
+  <section class="contacto" id="contacto">
+    <div class="contacto-inner">
+      <div class="contacto-text">
+        <span class="section-tag">Contacto</span>
+        <h2>¿Tenés un proyecto<br><em>en mente?</em></h2>
+        <p>Contame tu idea y te respondo en menos de 24 horas con una propuesta concreta.</p>
+        <div class="contacto-links">
+          <a href="https://github.com/LucasDeRivaDev" target="_blank" class="contacto-link">
+            <span>GitHub</span>
+            <span>→</span>
+          </a>
+          <a href="https://wa.me/5491112345678" target="_blank" class="contacto-link">
+            <span>WhatsApp</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+      <form class="contacto-form" action="https://formspree.io/f/xkoqekpb" method="POST">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Proyecto</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Contame qué necesitás..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- =====================
+       FOOTER
+       ===================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">LC</span>
+      <span class="footer-copy">© 2025 Lucas Cabrera — Todos los derechos reservados</span>
+      <div class="footer-links">
+        <a href="https://github.com/LucasDeRivaDev" target="_blank">GitHub</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
